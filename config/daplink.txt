@@ -1,0 +1,21 @@
+# choose st-link/j-link/dap-link etc.
+
+adapter driver cmsis-dap
+
+transport select swd
+
+
+
+# 0x10000 = 64K Flash Size
+
+set FLASH_SIZE 0x20000
+
+
+
+source [find target/stm32f1x.cfg]
+
+
+
+# download speed = 10MHz
+
+adapter speed 10000 作者：稚晖君 https://www.bilibili.com/read/cv6308000/ 出处：bilibili
